@@ -1,42 +1,36 @@
-NLP Project One: Psychedelic Trip Report Analysis
+# NLP Project One: Psychedelic Trip Report Analysis
 
-Overview
+## Overview
+This project demonstrates natural language processing techniques for **classifying and summarizing psychedelic trip reports**. All experiments are conducted using a **Google Colab notebook** with synthetic data to illustrate preprocessing, modeling, and evaluation workflows.
 
-This project demonstrates natural language processing techniques for classifying and summarizing psychedelic trip reports. All experiments are conducted using a Google Colab notebook with synthetic data to illustrate preprocessing, modeling, and evaluation workflows.
+## Project Goals
+- **Text Classification:** Predict the category of a trip report based on its content.  
+- **Abstractive Summarization:** Generate concise summaries of trip reports while preserving key experiences.  
 
-Project Goals
+## Notebook
+**File:** `notebooks/Trip_Report_NLP_Pipeline.ipynb`  
 
-Text Classification: Predict the category of a trip report based on its content.
+- **Preprocessing:** tokenization, text cleaning  
+- **Modeling:** Hugging Face Transformers (`AutoModelForSequenceClassification` and `AutoModelForSeq2SeqLM`)  
+- **Evaluation:** classification metrics (accuracy, F1) and summarization outputs  
+- Demonstrates training, evaluation, and inference on synthetic trip report data
 
-Abstractive Summarization: Generate concise summaries of trip reports while preserving key experiences.
+## Dataset
+- **Synthetic data** is included for reproducibility (`data/scraped/synthetic_reports.json`)  
+- Original scraping methodology is discussed conceptually in the notebook, but raw scraped data is **not included** for copyright reasons  
 
-Notebook: notebooks/Trip_Report_NLP_Pipeline.ipynb
+## Dependencies
+- Python 3.8+  
+- `transformers`  
+- `datasets`  
+- `torch`  
+- `evaluate`  
 
-Preprocessing: tokenization, text cleaning.
+Install all dependencies with:
 
-Modeling: Hugging Face Transformers (AutoModelForSequenceClassification and AutoModelForSeq2SeqLM).
-
-Evaluation: classification metrics (accuracy, F1) and summarization outputs.
-
-Demonstrates training, evaluation, and inference on synthetic trip report data.
-
-Dataset: Synthetic data is included for reproducibility (data/scraped/synthetic_reports.json).
-
-Original scraping methodology is discussed conceptually in the notebook, but raw scraped data is not included for copyright reasons.
-
-Dependencies:
-
-Python 3.8+
-
-transformers
-
-datasets
-
-torch
-
-evaluate
-
-Install all dependencies with: pip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 Trip Report Analysis - Web Scraper Component
 ⚠️ Important Notice

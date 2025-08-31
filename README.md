@@ -8,7 +8,7 @@ This project demonstrates natural language processing techniques for **classifyi
 - **Abstractive Summarization:** Generate concise summaries of reports while preserving key experiences.  
 
 ## Notebook
-**File:** `notebooks/Trip_Report_NLP_Pipeline.ipynb`  
+**File:** `notebooks/NLP_Experience_Report_Pipeline.ipynb`  
 
 - **Preprocessing:** tokenization, text cleaning  
 - **Modeling:** Hugging Face Transformers (`AutoModelForSequenceClassification` and `AutoModelForSeq2SeqLM`)  

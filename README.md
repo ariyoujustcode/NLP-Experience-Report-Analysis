@@ -1,11 +1,11 @@
-# NLP Project One: Psychedelic Trip Report Analysis
+# NLP Project One: Experience Report Analysis
 
 ## Overview
-This project demonstrates natural language processing techniques for **classifying and summarizing psychedelic trip reports**. All experiments are conducted using a **Google Colab notebook** with synthetic data to illustrate preprocessing, modeling, and evaluation workflows.
+This project demonstrates natural language processing techniques for **classifying and summarizing reports of a variety of experiences**. All experiments are conducted using a **Google Colab notebook** with synthetic data to illustrate preprocessing, modeling, and evaluation workflows.
 
 ## Project Goals
-- **Text Classification:** Predict the category of a trip report based on its content.  
-- **Abstractive Summarization:** Generate concise summaries of trip reports while preserving key experiences.  
+- **Text Classification:** Predict the category of a report based on its content.  
+- **Abstractive Summarization:** Generate concise summaries of reports while preserving key experiences.  
 
 ## Notebook
 **File:** `notebooks/Trip_Report_NLP_Pipeline.ipynb`  
@@ -13,7 +13,7 @@ This project demonstrates natural language processing techniques for **classifyi
 - **Preprocessing:** tokenization, text cleaning  
 - **Modeling:** Hugging Face Transformers (`AutoModelForSequenceClassification` and `AutoModelForSeq2SeqLM`)  
 - **Evaluation:** classification metrics (accuracy, F1) and summarization outputs  
-- Demonstrates training, evaluation, and inference on synthetic trip report data
+- Demonstrates training, evaluation, and inference on synthetic report data
 
 ## Dataset
 - **Synthetic data** is included for reproducibility (`data/scraped/synthetic_reports.json`)  
@@ -32,8 +32,7 @@ Install all dependencies with:
 pip install -r requirements.txt
 ```
 
-Trip Report Analysis - Web Scraper Component
-⚠️ Important Notice
+Experience Report Analysis - Web Scraper Component
 This scraper is not functional without explicit permission from Erowid Center.
 As per Erowid's robots.txt and Terms of Use, crawling and/or scraping Erowid.org requires written permission. This code is included in the repository to demonstrate:
 
@@ -45,7 +44,7 @@ Awareness of legal and ethical considerations in data collection
 
 Implements respectful scraping with delays and user agent rotation
 Handles SSL certificate issues and connection errors
-Extracts structured data from trip report pages
+Extracts structured data from experience report pages
 Saves data in multiple formats (JSON, CSV)
 Includes comprehensive logging and error handling
 
